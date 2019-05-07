@@ -6,14 +6,19 @@ function cube() {
   var num = document.getElementById("n1");
   num.value = Math.pow(num.value, 3);
 }
+function sine() {
+  var num = document.getElementById("n1");
+  num.value = Math.sin(num.value*Math.PI/180);
+}
 </script>
 </head>
 <body>
   <h1>Calculadora de Marco González </h1>
-  Number:
-  <input type="text" id="n1">
+<p>Number:
+<input type="text" id="n1"> <h7>(ángulos en grados)</h7></p>
   <p>
     <button onclick="cube()"> x^3 </button>
+    <button onclick="sine()"> sine </button>
   </p>
 </body>
 </html>
